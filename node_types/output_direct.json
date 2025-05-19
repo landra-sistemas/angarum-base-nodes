@@ -1,0 +1,19 @@
+{
+  "id": "a6a617e8-f15d-4afe-af66-cdbdac6ba24b",
+  "code": "output_direct",
+  "document_type": "node_type",
+  "data": {
+    "id": "a6a617e8-f15d-4afe-af66-cdbdac6ba24b",
+    "code": "output_direct",
+    "name": "Output Direct VM ",
+    "group": "Comunicaciones",
+    "alt_codes": "connections.direct",
+    "react_component_type": "output",
+    "custom_color": true,
+    "component_border_color": "#5dbeee",
+    "json_data_schema": "{\n    \"description\": \"Direct Output\",\n    \"type\": \"object\",\n    \"required\": [\n        \"output\"\n    ],\n    \"properties\": {\n        \"output\": {\n            \"title\": \"Output Name\",\n            \"type\": \"string\"\n        }\n    }\n}",
+    "xml_template": "<route id=\"{{source}}\">\n     <from uri=\"direct:{{source}}\"/>\n    <to uri=\"direct-vm:{{output}}\"/>\n</route>",
+    "json_ui_schema": "{\n    \"output\": {\n        \"ui:classNames\": \"col-8\"\n    }\n}",
+    "filename": "output_direct.json"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "ad3cd69f-2f84-43fd-b48f-76983e0c5669",
+  "code": "groovy_simple",
+  "document_type": "node_type",
+  "data": {
+    "id": "ad3cd69f-2f84-43fd-b48f-76983e0c5669",
+    "code": "groovy_simple",
+    "name": "Groovy Code",
+    "group": "Código",
+    "handles": "in,out",
+    "defaults": "{\n    \"language\": \"groovy\",\n    \"code\": \"\",\n    \"input_format\": \"raw\",\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\"\n}",
+    "alt_codes": "core.code.groovy.simple_editor",
+    "form_type": "jsonschema",
+    "node_type": "node",
+    "plugin_id": null,
+    "description": "Replaces body by custom groovy code",
+    "package_code": "angie.core",
+    "xml_template": "<route  id=\"{{source}}\">\n    <from uri=\"direct:{{source}}\"/>\n    {{applyUnmarshal input_format input_format_options}}\n    <setBody>\n        <{{language}}>\n<![CDATA[{{safe code}}]]>\n        </{{language}}>\n    </setBody>\n    {{applyMarshal output_format output_format_options}} \n    {{generateDestination target}}\n</route>",
+    "json_ui_schema": "{\n    \"code\": {\n        \"ui:classNames\": \"col-12\",\n        \"ui:widget\": \"AceEditorWidget\",\n        \"ui:mode\": \"groovy\",\n        \"ui:beautify\": true,\n        \"ui:height\": 550\n    }\n}",
+    "package_version": "1.1.0",
+    "json_data_schema": "{\n    \"description\": \"Replaces body by custom groovy code\",\n    \"type\": \"object\",\n    \"required\": [\n        \"label\",\n        \"code\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"type\": \"string\"\n        },\n        \"code\": {\n            \"type\": \"string\"\n        }\n    }\n}",
+    "form_type_plugin_id": null,
+    "react_component_type": "AngieDefaultNode",
+    "filename": "groovy_simple.json"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "ff50c55a-c758-43ff-947b-cc16a3970b81",
+  "code": "type_exchange",
+  "document_type": "node_type",
+  "data": {
+    "id": "ff50c55a-c758-43ff-947b-cc16a3970b81",
+    "code": "type_exchange",
+    "name": "Type exchange",
+    "group": "Type Management",
+    "name_": "JSON to XML CLONED",
+    "handles": "in,out",
+    "defaults": "{\n    \"input_format\": \"raw\",\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\"\n}",
+    "package_code": "angie.core",
+    "xml_template": "<route id=\"{{source}}\">\n    <from uri=\"direct:{{source}}\" />\n    <setHeader name=\"InputFormat\">\n        <constant>\n            {{input_format}}\n        </constant>\n    </setHeader>\n    <setHeader name=\"OutputFormat\">\n        <constant>\n            {{output_format}}\n        </constant>\n    </setHeader>\n    {{applyUnmarshal input_format input_format_options}}\n    {{#if (eq input_format \"base64\")}}\n        {{applyUnmarshal output_format output_format_options}}\n    {{/if}}\n    {{applyMarshal output_format output_format_options}}\n    {{generateDestination target}}\n</route>",
+    "json_ui_schema": "{\n}",
+    "package_version": "1.1.0",
+    "json_data_schema": "{\n    \"description\": \"Type exchange\",\n    \"type\": \"object\",\n    \"required\": [\n        \"label\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"title\": \"Name\",\n            \"type\": \"string\"\n        }\n    }\n}",
+    "react_component_type": "AngieDefaultNode",
+    "filename": "type_exchange.json"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "0b64837d-cc48-4ec7-a729-9b367ac2d9f1",
+  "code": "delay",
+  "document_type": "node_type",
+  "data": {
+    "id": "0b64837d-cc48-4ec7-a729-9b367ac2d9f1",
+    "code": "delay",
+    "name": "Delay",
+    "group": "Tiempo",
+    "name_": "Template CLONED",
+    "handles": "in,out",
+    "defaults": "{\n    \"delay\": 1000,\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\"\n}",
+    "package_code": "angie.core",
+    "xml_template": "<route  id=\"{{source}}\">\n    <from uri=\"direct:{{source}}\"/>\n    {{applyUnmarshal input_format input_format_options}}\n    <delay>\n        <constant>\n            {{delay}}\n        </constant>\n    </delay>\n    <to uri=\"stub:result?discardIfNoConsumers=true\"/>\n    {{applyMarshal output_format output_format_options}}\n    {{generateDestination target}}\n</route>",
+    "json_ui_schema": "{}",
+    "package_version": "1.1.0",
+    "json_data_schema": "{\n    \"type\": \"object\",\n    \"required\": [\n        \"label\",\n        \"delay\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"type\": \"string\"\n        },\n        \"delay\": {\n            \"type\": \"number\"\n        }\n    }\n}",
+    "react_component_type": "AngieDefaultNode",
+    "filename": "delay.json"
+  }
+}
