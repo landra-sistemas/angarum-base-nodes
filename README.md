@@ -4,7 +4,7 @@ Base packages for Angarum Integration manager
 ### Changelog
 
 v1.0.6:
-- Tester node with identifier for enabling multiple at the same time.
+- Tester node with identifier for enabling multiple at the same time. Requires core ^1.3.1
 
 v1.0.5:
 - Add SelectRemoteWidget for choosing certificates in input & output nodes. Requires cert management in core ^v1.2.4.
