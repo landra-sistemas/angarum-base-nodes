@@ -3,6 +3,9 @@ Base packages for Angarum Integration manager
 
 ### Changelog
 
+v1.0.7:
+- Improve forms and description for: sql and end
+
 v1.0.6:
 - Tester node with identifier for enabling multiple at the same time. Requires core ^1.3.1
 
