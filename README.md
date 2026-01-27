@@ -3,6 +3,10 @@ Base packages for Angarum Integration manager
 
 ### Changelog
 
+v1.0.8:
+- Reorganize nodes
+- Adapt to new code editor
+
 v1.0.7:
 - Improve forms and description for: sql and end
 

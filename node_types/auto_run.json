@@ -1,20 +1,22 @@
 {
-  "id": "63f16b19-1a58-4478-aa72-b0fd1c94ad7a",
-  "code": "auto_run",
-  "document_type": "node_type",
-  "data": {
-    "id": "63f16b19-1a58-4478-aa72-b0fd1c94ad7a",
-    "code": "auto_run",
-    "name": "Auto Run",
-    "group": "Utilidades",
-    "name_": "AWS SQS Consumer CLONED",
-    "defaults": "{\n    \"delay\": 1000\n}",
-    "package_code": "angie.core",
-    "xml_template": "<route  id=\"{{source}}\">\n    <from uri=\"timer://{{source}}?repeatCount=1&amp;delay={{delay}}\"/>\n    {{generateDestination target}}\n</route>",
-    "json_ui_schema": "{\n}",
-    "package_version": "1.1.0",
-    "json_data_schema": "{\n    \"type\": \"object\",\n    \"required\": [\n        \"label\",\n        \"delay\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"type\": \"string\"\n        },\n        \"delay\": {\n            \"type\": \"number\"\n        }\n\n    }\n}",
-    "react_component_type": "AngieInputNode",
-    "filename": "node_type.auto_run.json"
-  }
+  "id" : "63f16b19-1a58-4478-aa72-b0fd1c94ad7a",
+  "code" : "auto_run",
+  "document_type" : "node_type",
+  "data" : {
+    "code" : "auto_run",
+    "name" : "Auto Run",
+    "group" : "Tiempo",
+    "react_component_type" : "AngieInputNode",
+    "json_data_schema" : "{\n    \"type\": \"object\",\n    \"required\": [\n        \"label\",\n        \"delay\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"type\": \"string\"\n        },\n        \"delay\": {\n            \"type\": \"number\"\n        }\n\n    }\n}",
+    "json_ui_schema" : "{\n}",
+    "xml_template" : "<route  id=\"{{source}}\">\n    <from uri=\"timer://{{source}}?repeatCount=1&amp;delay={{delay}}\"/>\n    {{generateDestination target}}\n</route>",
+    "defaults" : "{\n    \"delay\": 1000\n}",
+    "id" : "63f16b19-1a58-4478-aa72-b0fd1c94ad7a",
+    "name_" : "AWS SQS Consumer CLONED",
+    "package_code" : "angie.core",
+    "package_version" : "1.1.0",
+    "filename" : "node_type.auto_run.json"
+  },
+  "package_code" : null,
+  "package_version" : null
 }
