@@ -11,6 +11,7 @@
     "custom_color" : true,
     "component_border_color" : "#d1ca00",
     "component_bg_color" : "#fffebc",
+    "component_text_color" : "#000000",
     "json_data_schema" : "{\n    \"type\": \"object\",\n    \"required\": [\n        \"label\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"title\": \"Comment\",\n            \"type\": \"string\"\n        },\n        \"description\": {\n            \"title\": \"Descripción\",\n            \"type\": \"string\"\n        }\n    }\n}",
     "json_ui_schema" : "{\n    \"description\": {\n        \"ui:widget\": \"AceEditorWidget\",\n        \"ui:height\": \"200px\",\n    }\n}",
     "xml_template" : "",
