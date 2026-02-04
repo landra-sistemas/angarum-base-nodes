@@ -3,6 +3,9 @@ Base packages for Angarum Integration manager
 
 ### Changelog
 
+v1.0.9:
+- WS Security: Add option to sign ws client requests
+
 v1.0.8:
 - Reorganize nodes
 - Adapt to new code editor
