@@ -10,7 +10,7 @@
     "json_data_schema" : "{\n    \"description\": \"XML to JSON\",\n    \"type\": \"object\",\n    \"required\": [\n        \"label\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"title\": \"Name\",\n            \"type\": \"string\"\n        },\n        \"direction\": {\n            \"title\": \"Set Conversion Direction\",\n            \"type\": \"string\",\n            \"enum\": [\n                \"XML2JSON\",\n                \"JSON2XML\"\n            ]\n        }\n    }\n}",
     "json_ui_schema" : "{\n}",
     "xml_template" : "<route id=\"{{source}}\">\n    <from uri=\"direct:{{source}}\" />\n    <to uri=\"xj:identity?transformDirection={{direction}}\"/>\n    {{generateDestination target}}\n</route>",
-    "defaults" : "{\n    \"direction\": \"\"\n}",
+    "defaults" : "{\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\",\n    \"direction\": \"\"\n}",
     "id" : "20c9b100-606d-4939-852f-d4a98e802179",
     "handles" : "in,out",
     "package_code" : "angie.core",
