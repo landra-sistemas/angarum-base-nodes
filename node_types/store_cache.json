@@ -1,0 +1,18 @@
+{
+  "id" : "fd0be90f-8c04-4957-9f22-6ebcc8da01cb",
+  "code" : "store_cache",
+  "document_type" : "node_type",
+  "data" : {
+    "code" : "store_cache",
+    "name" : "Store Cache",
+    "group" : "Cache",
+    "react_component_type" : "AngieDefaultNode",
+    "json_data_schema" : "{\n    \"type\": \"object\",\n    \"required\": [\n        \"label\",\n        \"code\",\n        \"cache_name\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"title\": \"Etiqueta\",\n            \"type\": \"string\"\n        },\n        \"cache_name\": {\n            \"title\": \"Nombre Cache\",\n            \"type\": \"string\"\n        },\n        \"code\": {\n            \"title\": \"Código a ejecutar\",\n            \"type\": \"string\"\n        }\n    }\n}",
+    "json_ui_schema" : "{\n    \"ui:classNames\": \"row\",\n    \"label\": {\n        \"ui:classNames\": \"col-6\"\n    },\n    \"cache_name\": {\n        \"ui:classNames\": \"col-6\"\n    },\n    \"code\": {\n        \"ui:classNames\": \"col-12\",\n        \"ui:widget\": \"AceEditorWidget\",\n        \"ui:mode\": \"groovy\",\n        \"ui:height\": 550,\n        \"ui:help\": \"Código a ejecutar antes de pasar el body a la cache\"\n    }\n}",
+    "xml_template" : "<route  id=\"{{source}}\">\n    <from uri=\"direct:{{source}}\"/>\n    {{applyUnmarshal input_format input_format_options}}\n\n    {{#if code}}\n    <setBody>\n        <groovy>\n<![CDATA[{{safe code}}]]>\n        </groovy>\n    </setBody>\n    {{/if}}\n    <!-- Insertar todo el mapa en el cache -->\n    <to uri=\"caffeine-cache://{{cache_name}}?action=PUT_ALL\"/>\n    {{applyMarshal output_format output_format_options}}\n    {{generateDestination target}}\n</route>",
+    "defaults" : "{\n    \"label\": \"Store Cache\",\n    \"cache_name\": \"\",\n    \"code\": \"\",\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\"\n}",
+    "id" : null
+  },
+  "package_code" : null,
+  "package_version" : null
+}
