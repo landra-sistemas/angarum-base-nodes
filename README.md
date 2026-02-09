@@ -3,6 +3,9 @@ Base packages for Angarum Integration manager
 
 ### Changelog
 
+v1.0.10:
+- Caffeine cache: Add store cache node
+
 v1.0.9:
 - WS Security: Add option to sign ws client requests
 
