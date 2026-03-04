@@ -3,6 +3,9 @@ Base packages for Angarum Integration manager
 
 ### Changelog
 
+v1.0.11:
+- Options in soap cli for sending BinarySecurityToken
+
 v1.0.10:
 - Caffeine cache: Add store cache node
 
