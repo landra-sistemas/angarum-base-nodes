@@ -3,6 +3,9 @@ Base packages for Angarum Integration manager
 
 ### Changelog
 
+v1.0.12:
+- Better wssecurity parameterization
+
 v1.0.11:
 - Options in soap cli for sending BinarySecurityToken
 
