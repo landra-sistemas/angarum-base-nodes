@@ -1,0 +1,17 @@
+{
+  "id" : "0b323ce8-4a26-4c02-a659-3fccd4f5e3ee",
+  "code" : "idempotent",
+  "document_type" : "node_type",
+  "data" : {
+    "code" : "idempotent",
+    "name" : "Idempotent Consumer",
+    "group" : "Flujo",
+    "react_component_type" : "MultiTargetNode",
+    "hide_types" : true,
+    "json_data_schema" : "{\n    \"description\": \"Asegura que un flujo solo se ejecuta una vez para la misma clave.\",\n    \"type\": \"object\",\n    \"required\": [\n        \"label\",\n        \"expression\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"type\": \"string\"\n        },\n        \"expression\": {\n            \"type\": \"string\",\n        }\n    }\n}",
+    "json_ui_schema" : "{\n    \"ui:classNames\": \"row\",\n    \"label\": {\n        \"ui:classNames\": \"col-4\"\n    },\n  \n    \"expression\": {\n        \"ui:classNames\": \"col-8\"\n    },\n}",
+    "xml_template" : "<route id=\"{{source}}\">\n    <from uri=\"direct:{{source}}\"/>\n\n\n    <!-- Solo primera vez para esa key -->\n    <idempotentConsumer idempotentRepository=\"idempotentRepo\">\n        <simple>{{expression}}</simple>\n        {{generateDestination handles.[0].to}}\n    </idempotentConsumer>\n\n    {{generateDestination handles.[1].to}}\n</route>\n",
+    "defaults" : "{\n  \"expression\": \"${header.message_id}\",\n  \"handles\": [\n        {\n            \"id\": \"out0\",\n            \"to\": \"\",\n            \"title\": \"Solo una vez\",\n            \"color\": \"red\"\n        },\n        {\n            \"id\": \"out1\",\n            \"to\": \"\",\n            \"title\": \"Todas las veces\",\n            \"color\": \"green\"\n        }\n    ],\n}",
+    "id" : "0b323ce8-4a26-4c02-a659-3fccd4f5e3ee"
+  }
+}
