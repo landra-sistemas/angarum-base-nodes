@@ -3,6 +3,12 @@ Base packages for Angarum Integration manager
 
 ### Changelog
 
+v1.0.13:
+- Refactor all nodes removing obsolete fields and properties
+- Add new idempotent consumer node: Allows to filter duplicate messages based on a message id or a custom expression. 
+- Add stop node: Allows to stop processing a message.
+
+
 v1.0.12:
 - Better wssecurity parameterization
 

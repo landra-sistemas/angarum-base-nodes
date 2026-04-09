@@ -1,0 +1,18 @@
+{
+  "id" : "c2c34e7f-6a49-487d-8513-fbc5a0819a28",
+  "code" : "stop",
+  "document_type" : "node_type",
+  "data" : {
+    "code" : "stop",
+    "name" : "Stop",
+    "group" : "Flujo",
+    "react_component_type" : "AngieOutputNode",
+    "custom_color" : false,
+    "hide_types" : true,
+    "json_data_schema" : "{\n    \"title\": \"Stop\",\n    \"type\": \"object\",\n    \"required\": [\n        \"label\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"type\": \"string\"\n        }\n    }\n}",
+    "json_ui_schema" : "{}",
+    "xml_template" : "<route  id=\"{{source}}\">\n    <from uri=\"direct:{{source}}\"/>\n    <stop />\n</route>",
+    "defaults" : "{\n    \n}",
+    "id" : "c2c34e7f-6a49-487d-8513-fbc5a0819a28"
+  }
+}
