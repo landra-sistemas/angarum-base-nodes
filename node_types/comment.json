@@ -6,6 +6,7 @@
     "code": "comment",
     "name": "Comment",
     "group": "Utilidades",
+    "description": "Nota de texto en el diseño del canal; no se ejecuta ni genera ruta.",
     "alt_codes": "core.utils.comment",
     "react_component_type": "CommentNode",
     "custom_color": true,

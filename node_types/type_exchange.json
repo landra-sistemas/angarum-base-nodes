@@ -6,6 +6,7 @@
     "code": "type_exchange",
     "name": "Type exchange",
     "group": "Type Management",
+    "description": "Cambia el formato con el que se interpreta el mensaje de ahí en adelante (por ejemplo, de JSON a XML).",
     "name_": "JSON to XML CLONED",
     "handles": "in,out",
     "defaults": "{\n    \"input_format\": \"raw\",\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\"\n}",

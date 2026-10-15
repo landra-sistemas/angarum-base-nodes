@@ -6,6 +6,7 @@
     "code": "input_direct",
     "name": "Input Direct VM ",
     "group": "Comunicaciones",
+    "description": "Recibe mensajes enviados desde otro canal por Direct VM, con el nombre indicado. Es un punto de entrada.",
     "alt_codes": "connections.direct.input",
     "react_component_type": "input",
     "custom_color": true,

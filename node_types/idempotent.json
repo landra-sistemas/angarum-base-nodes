@@ -6,6 +6,8 @@
     "code" : "idempotent",
     "name" : "Idempotent Consumer",
     "group" : "Flujo",
+    "description" : "Deja pasar solo la primera vez cada mensaje con la misma clave; los repetidos salen por la segunda salida.",
+    "summary" : "{{expression}}",
     "react_component_type" : "MultiTargetNode",
     "hide_types" : true,
     "json_data_schema" : "{\n    \"description\": \"Asegura que un flujo solo se ejecuta una vez para la misma clave.\",\n    \"type\": \"object\",\n    \"required\": [\n        \"label\",\n        \"expression\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"type\": \"string\"\n        },\n        \"expression\": {\n            \"type\": \"string\",\n        }\n    }\n}",

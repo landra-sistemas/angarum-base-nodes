@@ -6,6 +6,7 @@
     "code": "wireTap",
     "name": "Wire Tap",
     "group": "Flujo",
+    "description": "Envía una copia del mensaje a otra ruta sin esperar su resultado y sigue con el original.",
     "name_": "Enrich CLONED",
     "handles": "in,out",
     "defaults": "{\n    \"handles\": [\n        {\n            \"id\": \"out0\",\n            \"to\": \"\",\n            \"title\": \"Clonar Mensaje\",\n            \"position\": \"top\",\n            \"color\": \"blue\"\n        },\n        {\n            \"id\": \"out1\",\n            \"to\": \"\",\n            \"title\": \"Continuar Flujo\"\n        }\n    ],\n    \"input_format\": \"raw\",\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\"\n}",

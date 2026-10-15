@@ -6,6 +6,8 @@
     "code" : "throttle",
     "name" : "Throttle",
     "group" : "Flujo",
+    "summary" : "{{numberOfRequests}} cada {{timePeriodMillis}} ms",
+    "description" : "Limita cuántos mensajes pasan por periodo; los que exceden se rechazan o esperan, y la segunda salida recoge los rechazados.",
     "react_component_type" : "MultiTargetNode",
     "hide_types" : false,
     "json_data_schema" : "{\n    \"type\": \"object\",\n    \"required\": [\n        \"label\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"type\": \"string\"\n        },\n        \"timePeriodMillis\": {\n            \"title\": \"Time period (ms)\",\n            \"type\": \"string\"\n        },\n        \"numberOfRequests\": {\n            \"title\": \"Number of request\",\n            \"type\": \"string\"\n        },\n        \"rejectExecution\": {\n            \"title\": \"Reject execution\",\n            \"type\": \"boolean\"\n        }\n    }\n}",

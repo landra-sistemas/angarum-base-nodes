@@ -6,6 +6,8 @@
     "code": "scheduler",
     "name": "Scheduler",
     "group": "Tiempo",
+    "description": "Lanza el flujo cada cierto tiempo, con un retardo inicial opcional. Es un punto de entrada.",
+    "summary": "cada {{delay}} {{timeUnit}}",
     "alt_codes": "core.utils.scheduler",
     "react_component_type": "AngieInputNode",
     "json_data_schema": "{\n    \"description\": \"Scheduler\",\n    \"type\": \"object\",\n    \"required\": [\n        \"label\",\n        \"delay\",\n        \"initialDelay\",\n        \"timeUnit\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"title\": \"Name\",\n            \"type\": \"string\"\n        },\n        \"delay\": {\n            \"title\": \"Delay\",\n            \"type\": \"number\"\n        },\n        \"initialDelay\": {\n            \"title\": \"Initial Delay\",\n            \"type\": \"number\"\n        },\n        \"timeUnit\": {\n            \"title\": \"Time Unit\",\n            \"type\": \"string\",\n            \"enum\": [\n                \"NANOSECONDS\",\n                \"MICROSECONDS\",\n                \"MILLISECONDS\",\n                \"SECONDS\",\n                \"MINUTES\",\n                \"HOURS\",\n                \"DAYS\"\n            ]\n        }\n    }\n}",

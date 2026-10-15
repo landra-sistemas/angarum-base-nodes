@@ -13,6 +13,6 @@
     "xml_template": "<route  id=\"{{source}}\">\n    <from uri=\"direct://test-{{source}}\"/>\n    <setBody>\n        <simple>\n<![CDATA[{{escapeMessage (ternary data.code data.code code)}}]]>\n        </simple>\n    </setBody>\n    {{setHeaderList data.headers}}\n    {{setPropertyList data.properties}}\n    <to uri=\"micrometer:counter:inject_counter_total?increment=1\"/>\n    {{applyUnmarshal output_format output_format_options}}\n    {{applyMarshal output_format output_format_options}}\n    {{generateDestination target}}\n</route>",
     "defaults": "{\n  \"label\": \"Tester\",\n  \"buttonLabel\": \"Enviar\",\n  \"code\": \"\",\n  \"url\": \"sendMessageToRoute\",\n  \"input_format\": \"raw\",\n  \"output_format\": \"raw\"\n}\n",
     "handles": "out",
-    "description": "Output message"
+    "description": "Genera un mensaje de prueba (cuerpo, cabeceras y propiedades) con un botón «Ejecutar» y lo envía por el flujo."
   }
 }

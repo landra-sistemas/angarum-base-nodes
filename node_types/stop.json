@@ -6,6 +6,7 @@
     "code" : "stop",
     "name" : "Stop",
     "group" : "Flujo",
+    "description" : "Termina el flujo en este punto sin procesar más nodos.",
     "react_component_type" : "AngieOutputNode",
     "custom_color" : false,
     "hide_types" : true,

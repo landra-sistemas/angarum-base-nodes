@@ -6,6 +6,7 @@
     "code": "loop",
     "name": "Loop",
     "group": "Flujo",
+    "description": "Repite el flujo de su primera salida tantas veces como se indique y después continúa por la segunda.",
     "alt_codes": "core.flow.loop",
     "react_component_type": "MultiTargetNode",
     "json_data_schema": "{\n    \"title\": \"Loop\",\n    \"type\": \"object\",\n    \"required\": [\n        \"label\",\n        \"count\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"type\": \"string\"\n        },\n        \"count\": {\n            \"type\": \"string\"\n        }\n    }\n}",

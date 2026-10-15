@@ -6,12 +6,13 @@
     "code": "remove_headers",
     "name": "Remove Headers",
     "group": "Mappers",
+    "summary": "{{pattern}}",
     "react_component_type": "AngieDefaultNode",
     "json_data_schema": "{\n    \"type\": \"object\",\n    \"required\": [\n        \"pattern\"\n    ],\n    \"properties\": {\n        \"pattern\": {\n            \"type\": \"string\"\n        }\n    }\n}",
     "json_ui_schema": "{\n    \"pattern\":{\n        \"ui:help\": \"Elimina las cabeceras que cumplan con el patrón especificado. Puede ser: coincidencia exacta, wildcard o expresión regular.\"\n    }\n}",
     "xml_template": "<route  id=\"{{source}}\">\n    <from uri=\"direct:{{source}}\"/>\n    <removeHeaders pattern=\"{{pattern}}\"/>\n    {{generateDestination target}}\n</route>",
     "defaults": "{\n    \"pattern\": \"*\",\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\"\n}",
     "handles": "in",
-    "description": "Output message"
+    "description": "Elimina del mensaje las cabeceras que coincidan con un patrón (* borra todas)."
   }
 }

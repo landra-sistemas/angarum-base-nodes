@@ -6,6 +6,7 @@
     "code": "switch",
     "name": "Switch",
     "group": "Flujo",
+    "summary": "{{language}} · {{handles.length}} ramas",
     "alt_codes": "core.flow.switch",
     "react_component_type": "MultiTargetNode",
     "json_data_schema": "{\n    \"title\": \"Switch Node\",\n    \"description\": \"Create dynamic conditions\",\n    \"type\": \"object\",\n    \"required\": [\n        \"label\",\n        \"handles\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"title\": \"Etiqueta\",\n            \"type\": \"string\"\n        },\n        \"language\": {\n            \"title\": \"Lenguaje\",\n            \"enum\": [\n                \"simple\",\n                \"csimple\",\n                \"mvel\",\n                \"js\"\n            ],\n            \"type\": \"string\"\n        },\n        \"handles\": {\n            \"title\": \"Ramas\",\n            \"type\": \"array\",\n            \"items\": {\n                \"type\": \"object\",\n                \"properties\": {\n                    \"condition\": {\n                        \"title\": \"Condición\",\n                        \"type\": \"string\"\n                    }\n                }\n            }\n        }\n    }\n}",
@@ -14,6 +15,6 @@
     "defaults": "{\n    \"language\": \"simple\",\n    \"handles\": [\n        {\n            \"condition\": \"${body.foo} == bar\",\n            \"to\": \"\"\n        }\n    ],\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\"\n}",
     "id": "d1383f5e-a55e-4c3d-9506-4e418e3702a7",
     "handles": "",
-    "description": "Create dynamic condition"
+    "description": "Reparte el mensaje por una de sus salidas según condiciones evaluadas en orden (simple, csimple, mvel o js); sigue la primera que se cumple."
   }
 }

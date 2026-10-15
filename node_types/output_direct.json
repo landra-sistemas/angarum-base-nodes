@@ -6,6 +6,7 @@
     "code": "output_direct",
     "name": "Output Direct VM ",
     "group": "Comunicaciones",
+    "description": "Envía el mensaje a otro canal por Direct VM, con el nombre indicado.",
     "alt_codes": "connections.direct",
     "react_component_type": "output",
     "custom_color": true,

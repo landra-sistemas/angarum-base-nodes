@@ -6,6 +6,8 @@
     "code": "cron",
     "name": "Cron",
     "group": "Tiempo",
+    "description": "Lanza el flujo según una expresión cron. Es un punto de entrada del canal.",
+    "summary": "{{schedule}}",
     "defaults": "{\n    \"schedule\": \"*/1 * * * * *\"\n}",
     "package_code": "angie.core",
     "xml_template": "<route  id=\"{{source}}\">\n    <from uri=\"cron:{{label}}?schedule={{schedule}}\"/>\n    {{generateDestination target}}\n</route>",

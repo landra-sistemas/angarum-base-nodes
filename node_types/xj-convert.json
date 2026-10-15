@@ -6,6 +6,8 @@
     "code": "xj-convert",
     "name": "XJ Conversion",
     "group": "Type Management",
+    "description": "Convierte el mensaje entre XML y JSON, en la dirección indicada.",
+    "summary": "{{direction}}",
     "react_component_type": "AngieDefaultNode",
     "json_data_schema": "{\n    \"description\": \"XML to JSON\",\n    \"type\": \"object\",\n    \"required\": [\n        \"label\"\n    ],\n    \"properties\": {\n        \"label\": {\n            \"title\": \"Name\",\n            \"type\": \"string\"\n        },\n        \"direction\": {\n            \"title\": \"Set Conversion Direction\",\n            \"type\": \"string\",\n            \"enum\": [\n                \"XML2JSON\",\n                \"JSON2XML\"\n            ]\n        }\n    }\n}",
     "json_ui_schema": "{\n}",

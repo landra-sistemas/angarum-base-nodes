@@ -6,6 +6,8 @@
     "code": "delay",
     "name": "Delay",
     "group": "Tiempo",
+    "summary": "{{delay}} ms",
+    "description": "Espera un tiempo fijo, en milisegundos, antes de pasar el mensaje al siguiente nodo.",
     "name_": "Template CLONED",
     "handles": "in,out",
     "defaults": "{\n    \"delay\": 1000,\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\"\n}",

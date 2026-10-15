@@ -12,6 +12,6 @@
     "xml_template": "<route  id=\"{{source}}\">\n    <from uri=\"direct:{{source}}\"/>\n    {{applyUnmarshal input_format input_format_options}}\n    {{#if (ne code \"\")}}\n    <setBody>\n        <simple trim=\"{{trim}}\">\n<![CDATA[{{safe code}}]]>\n        </simple>\n    </setBody>\n    {{/if}}\n    {{applyUnmarshal output_format output_format_options}}\n    {{applyMarshal output_format output_format_options}}\n    <to uri=\"stub:end{{source}}?discardIfNoConsumers=true\"/>\n</route>",
     "defaults": "{\n    \"code\": \"\",\n    \"trim\": false,\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\"\n}",
     "handles": "in",
-    "description": "Output message"
+    "description": "Termina la rama del flujo. Opcionalmente sustituye el cuerpo por un texto (con expresiones simple) antes de acabar."
   }
 }

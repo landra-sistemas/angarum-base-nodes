@@ -6,6 +6,8 @@
     "code": "file_input",
     "name": "File Input",
     "group": "Comunicaciones",
+    "description": "Lee ficheros de una carpeta y lanza el flujo con el contenido de cada uno. Es un punto de entrada.",
+    "summary": "{{directory}}",
     "alt_codes": "core.file.input",
     "react_component_type": "AngieInputNode",
     "custom_color": true,

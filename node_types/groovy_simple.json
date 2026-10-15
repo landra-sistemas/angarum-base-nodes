@@ -13,6 +13,6 @@
     "xml_template": "<route  id=\"{{source}}\">\n    <from uri=\"direct:{{source}}\"/>\n    {{applyUnmarshal input_format input_format_options}}\n    <setBody>\n        <{{language}}>\n<![CDATA[{{safe code}}]]>\n        </{{language}}>\n    </setBody>\n    {{applyMarshal output_format output_format_options}} \n    {{generateDestination target}}\n</route>",
     "defaults": "{\n    \"language\": \"groovy\",\n    \"code\": \"\",\n    \"input_format\": \"raw\",\n    \"input_format\": \"raw\",\n    \"output_format\": \"raw\"\n}",
     "handles": "in,out",
-    "description": "Replaces body by custom groovy code"
+    "description": "Sustituye el cuerpo del mensaje por el resultado de un código Groovy; el script puede leer y modificar cabeceras y propiedades."
   }
 }
